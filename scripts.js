@@ -7,7 +7,7 @@ function calculateCosts() {
     const inflationRate = parseFloat(document.getElementById('inflationRate').value) / 100 || 0;
 
     let yearlyCost = days * (costPerNight + foodPerDay + entertainmentPerDay);
-    let report = `<h2>Cost Projection for ${name}</h2><ul>`;
+    let report = `<h2>${name}'s 30 Year Vacation Plan</h2><ul>`;
 
     report += `<li>Year 1: Total Annual Cost: $${yearlyCost.toFixed(2)}, Monthly Cost: $${(yearlyCost / 12).toFixed(2)}</li>`;
 
